@@ -1,0 +1,196 @@
+{
+    "construction": {
+        // time in seconds
+        "lumberyard": [
+            50  // level 1
+        ],
+        "stoner": [
+            180 // level 1
+        ]
+    },
+    "quests": [
+        {
+            "description": "Build a lumberyard",
+            "rewards": [
+                {
+                    "wood": 5,
+                    "stone": 5,
+                    "iron": 5
+                }
+            ]
+        },
+        {
+            "description": "Build a stoner",
+            "rewards": [
+                {
+                    "wood": 5,
+                    "stone": 5,
+                    "iron": 5
+                }
+            ]
+        },
+        {
+            "description": "Upgrade farm to level 2",
+            "rewards": [
+                {
+                    "Slinger": 5
+                }
+            ]
+        },
+        {
+            "description": "Kill 1 bandit",
+            "rewards": [
+                {
+                    "wood": 10,
+                    "stone": 10,
+                    "iron": 10
+                }
+            ]
+        },
+        {
+            "description": "Build 1 village",
+            "rewards": [
+                {
+                    "wood": 20,
+                    "stone": 20,
+                    "iron": 20
+                }
+            ]
+        },
+        {
+            "description": "Claim resources from 1 village",
+            "rewards": [
+                {
+                    "Slinger": 5
+                }
+            ]
+        },
+        {
+            "description": "Upgrade lumberyard to level 2",
+            "rewards": [
+                {
+                    "wood": 15,
+                    "stone": 15,
+                    "iron": 15
+                }
+            ]
+        },
+        {
+            "description": "Upgrade storage to level 2",
+            "rewards": [
+                {
+                    "wood": 10,
+                    "stone": 15,
+                    "iron": 5
+                }
+            ]
+        },
+        {
+            "description": "Build a temple",
+            "rewards": [
+                {
+                    "wood": 25,
+                    "stone": 50,
+                    "iron": 30
+                }
+            ]
+        },
+        {
+            "description": "Select hera to worthship",
+            "rewards": [
+                {
+                    "devotion_hera": 50
+                }
+            ]
+        },
+        {
+            "description": "Use a god power",
+            "rewards": [
+                {
+                    "devotion_hera": 30
+                }
+            ]
+        },
+        {
+            "description": "Build an ironer",
+            "rewards": [
+                {
+                    "wood": 5,
+                    "stone": 5,
+                    "iron": 5
+                }
+            ]
+        },
+        {
+            "description": "Upgrade senate to level 2",
+            "rewards": [
+                {
+                    "wood": 5,
+                    "stone": 5,
+                    "iron": 5
+                }
+            ]
+        },
+        {
+            "description": "Upgrade farm to level 3",
+            "rewards": [
+                {
+                    "bonus_population": 50
+                }
+            ]
+        },
+        {
+            "description": "Build the barracks",
+            "rewards": [
+                {
+                    "bonus_recruitmentspeed": 1
+                }
+            ]
+        },
+        {
+            "description": "Recruit a swordsman",
+            "rewards": [
+                {
+                    "wood": 400,
+                    "stone": 350,
+                }
+            ]
+        },
+        {
+            "description": "Upgrade stoner to level 2",
+            "rewards": [
+                {
+                    "wood": 20,
+                    "stone": 15,
+                    "iron": 15
+                }
+            ]
+        },
+        {
+            "description": "Recruit a divine envoy",
+            "rewards": [
+                {
+                    "devotion_hera": 250
+                }
+            ]
+        },
+        {
+            "description": "Upgrade temple to level 3",
+            "rewards": [
+                {
+                    "devotion_hera": 60
+                }
+            ]
+        },
+        {
+            "description": "Upgrade ironer to level 2",
+            "rewards": [
+                {
+                    "wood": 30,
+                    "stone": 10,
+                    "iron": 25
+                }
+            ]
+        },
+    ]
+}
