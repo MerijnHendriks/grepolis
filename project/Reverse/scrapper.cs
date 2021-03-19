@@ -25,7 +25,7 @@ namespace Grepolis
         /// <summary>
         /// .css files to target (obtained from index.html)
         /// </summary>
-        public const string[] CssFiles = new string[]
+        public const string[] CssPaths = new string[]
         {
             "/cache/css/merged/game_0.css",
             "/cache/css/merged/game_1.css",
@@ -36,14 +36,22 @@ namespace Grepolis
             "/cache/css/merged/game_6.css",
             "/cache/css/merged/game_7.css"
         };
+
+        /// <summary>
+        /// .map files to target (obtained from game.min.js)
+        /// </summary>
+        public const string[] mapPaths = new string[]
+        {
+            "/cache/js/merged/base/game.base.js.map"
+        };
     }
 
-    public class ScrapperHelper
+    public static class ScrapperHelper
     {
         /// <summary>
         /// get .js link paths from .map file
         /// </summary>
-        public string[] GetMapSourcePath(MapFile map)
+        public static string[] GetMapSourcePaths(MapFile map)
         {
             List<string> result = new List<string>();
             string rootPath = map.sourceRoot.replace("/placeholder/placeholder", "");
@@ -52,9 +60,9 @@ namespace Grepolis
             {
                 string path = rootPath + url.replace("../..", "");
 
-                if (!result.Contains(url))
+                if (!result.Contains(path))
                 {
-                    result.Add(url);
+                    result.Add(path);
                 }
             }
         }
@@ -62,15 +70,17 @@ namespace Grepolis
         /// <summary>
         /// get links from .css files
         /// </summary>
-        public string[] GetCssLinks(string css)
+        public static string[] GetCssImagePaths(string css, string cdn)
         {
             List<string> result = new List<string>();
 
             foreach (Match match in ScrapperConstants.LinkRegex.Matches(css))
             {
-                if (!result.Contains(match.Value))
+                string path = match.Value.replace(cdn, "");
+
+                if (!result.Contains(path))
                 {
-                    result.Add(match.Value);
+                    result.Add(path);
                 }
             }
 
@@ -81,15 +91,31 @@ namespace Grepolis
     public class Scrapper
     {
         public readonly string CDN;
+        public readonly string OutPath;
 
-        public Scrapper(string cdn)
+        public Scrapper(string cdn, string outPath)
         {
             CDN = cdn;
+            OutPath = outPath;
+        }
+
+        public void DownloadFile(string path)
+        {
+            // code here
+        }
+
+        public void DownloadFiles(string[] paths)
+        {
+            // code here
         }
 
         public void Run()
         {
-            // code here
+            /*
+            string[] jsPaths = ScrapperHelper.GetMapSourcePaths();
+            string[] cssPaths = ScrapperConstants.CssPaths;
+            string[] imagePaths = ScrapperHelper.GetCssImagePaths();
+            */
         }
     }
 
@@ -97,7 +123,7 @@ namespace Grepolis
     {
         public static void Main(string[] args)
         {
-            Scrapper scrapper = new Scrapper("https://gpnl.innogamescdn.com/");
+            Scrapper scrapper = new Scrapper("https://gpen.innogamescdn.com", "./downloaded/");
         }
     }
 }
