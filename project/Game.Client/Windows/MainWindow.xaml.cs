@@ -1,5 +1,5 @@
 ﻿using System.Windows;
-using Game.Client.Systems.View;
+using Game.Client.Utils;
 using Game.Client.Views;
 
 namespace Game.Client.Windows
@@ -9,8 +9,8 @@ namespace Game.Client.Windows
         public MainWindow()
         {
             InitializeComponent();
-            ViewController.SetWindow(this);
-            ViewController.Switch(new CityView());
+            ViewUtil.SetWindow(this);
+            ViewUtil.Switch(new MainMenuView());
         }
     }
 }

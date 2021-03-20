@@ -10,8 +10,8 @@
         <Image HorizontalAlignment="Left" Height="450" VerticalAlignment="Top" Width="800"/>
 
         <!-- resources bar -->
-        <Rectangle HorizontalAlignment="Left" Height="48" Stroke="Black" VerticalAlignment="Top" Width="790" Fill="Black"/>
-        <TextBlock HorizontalAlignment="Left" Margin="668,16,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" RenderTransformOrigin="-0.257,0.436"/>
+        <Rectangle HorizontalAlignment="Left" Height="48" Stroke="Black" VerticalAlignment="Top" Width="800" Fill="Black"/>
+        <TextBlock HorizontalAlignment="Left" Margin="668,16,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White"/>
         <TextBlock HorizontalAlignment="Left" Margin="722,16,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White"/>
         <TextBlock HorizontalAlignment="Left" Margin="614,16,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White"/>
 

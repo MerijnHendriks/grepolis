@@ -1,9 +1,9 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 
-namespace Game.Client.Systems.View
+namespace Game.Client.Utils
 {
-    public static class ViewController
+    public static class ViewUtil
     {
         private static Window Window;
 

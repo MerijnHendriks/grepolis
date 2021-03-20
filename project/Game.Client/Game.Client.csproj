@@ -7,7 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\bg-main.png" />
+    <None Remove="Resources\logo-main.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Game.Common\Game.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\bg-main.png" />
+    <Resource Include="Resources\logo-main.png" />
   </ItemGroup>
 
 </Project>
