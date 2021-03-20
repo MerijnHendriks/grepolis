@@ -46,10 +46,10 @@ namespace Game.Common.Utils
 				}
 			}
 
-			WebResponse response = request.GetResponse();
-
 			try
 			{
+				WebResponse response = request.GetResponse();
+
 				using (MemoryStream ms = new MemoryStream())
 				{
 					response.GetResponseStream().CopyTo(ms);

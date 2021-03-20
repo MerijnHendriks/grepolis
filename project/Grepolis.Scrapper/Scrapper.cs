@@ -18,20 +18,36 @@ namespace Grepolis.Scrapper
 
         public void DownloadFile(string path)
         {
-            VFS.WriteFile(OutPath + path, HttpRequest.Send(CDN + path, HttpMethod.Get));
+            Console.WriteLine(path);
+
+            string filepath = OutPath + path;
+            byte[] body = HttpRequest.Send(CDN + path, HttpMethod.Get);
+
+            if (body != null)
+            {
+                // save file
+                VFS.WriteFile(filepath, body);
+            }
+
+            if (body != null && path.GetFileExtension() == ".jpg")
+            {
+                // convert jpg to png
+                VFS.WriteFile(filepath.Replace(".jpg", ".png"), ScrapperHelper.ConvertJpgToPng(filepath));
+                VFS.DeleteFile(filepath);
+            }
         }
 
         public void DownloadFiles(string[] paths)
         {
             foreach (string path in paths)
             {
-                Console.WriteLine(path);
                 DownloadFile(path);
             }
         }
 
         public void Run()
         {
+            /*
             // get js files
             DownloadFiles(ScrapperConstants.MapPaths);
 
@@ -45,6 +61,7 @@ namespace Grepolis.Scrapper
 
             // get css files
             DownloadFiles(ScrapperConstants.CssPaths);
+            */
 
             // get images
             string[] cssFiles = VFS.GetFiles(OutPath + "/cache/css/merged/");

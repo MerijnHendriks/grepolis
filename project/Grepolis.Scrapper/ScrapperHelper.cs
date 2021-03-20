@@ -1,4 +1,7 @@
 ﻿using System.Collections.Generic;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Text.RegularExpressions;
 using Game.Common.Utils;
 
@@ -25,6 +28,7 @@ namespace Grepolis.Scrapper
                 }
             }
 
+            result.Sort();
             return result.ToArray();
         }
 
@@ -45,7 +49,26 @@ namespace Grepolis.Scrapper
                 }
             }
 
+            result.Sort();
             return result.ToArray();
+        }
+
+        /// <summary>
+        /// convert .jpg to .png
+        /// </summary>
+        public static byte[] ConvertJpgToPng(string filepath)
+        {
+            Bitmap image;
+
+            using (MemoryStream ms = new MemoryStream())
+            {
+                using (FileStream fs = File.OpenRead(filepath))
+                {
+                    image = (Bitmap)Image.FromStream(fs);
+                    image.Save(ms, ImageFormat.Png);
+                    return ms.ToArray();
+                }
+            }
         }
     }
 }
