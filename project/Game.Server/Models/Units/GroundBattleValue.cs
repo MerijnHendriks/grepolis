@@ -1,6 +1,6 @@
-namespace Game.Server.Models
+namespace Game.Server.Models.Units
 {
-    public class GroundUnitCombat
+    public class GroundBattleValue
     {
         public int Blunt { get; set; }
         public int Sharp { get; set; }

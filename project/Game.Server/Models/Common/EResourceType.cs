@@ -1,9 +1,8 @@
 namespace Game.Server.Models
 {
-    public enum EResource
+    public enum EResourceType
     {
-        None = 0,
-        Wood,
+        Wood = 0,
         Stone,
         Iron,
         Devotion,

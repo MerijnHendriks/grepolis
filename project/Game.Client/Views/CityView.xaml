@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="Game.Client.Views.CityView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <!-- city view -->
+        <Image HorizontalAlignment="Left" Height="450" VerticalAlignment="Top" Width="800"/>
+
+        <!-- resources bar -->
+        <Rectangle HorizontalAlignment="Left" Height="48" Stroke="Black" VerticalAlignment="Top" Width="790" Fill="Black"/>
+        <TextBlock HorizontalAlignment="Left" Margin="668,16,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" RenderTransformOrigin="-0.257,0.436"/>
+        <TextBlock HorizontalAlignment="Left" Margin="722,16,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="614,16,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White"/>
+
+    </Grid>
+</UserControl>

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Windows;
-using Game.Client.Views;
+using Game.Client.Windows;
 
 namespace Game.Client
 {
