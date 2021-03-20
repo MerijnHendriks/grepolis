@@ -5,11 +5,7 @@ VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Game.Client", "Game.Client\Game.Client.csproj", "{625635FD-FECB-42EC-9783-E2175C3660AD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Game.Server", "Game.Server\Game.Server.csproj", "{8CB23309-0D3F-48B0-A369-C7F69E2286DD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grepolis.Scrapper", "Grepolis.Scrapper\Grepolis.Scrapper.csproj", "{AF5525E1-9281-4DE3-868F-B448ECCB5C63}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game.Common", "Game.Common\Game.Common.csproj", "{42A3AED5-9D7F-459E-B628-FE3EEC26047F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Game.Common", "Game.Common\Game.Common.csproj", "{42A3AED5-9D7F-459E-B628-FE3EEC26047F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,14 +17,6 @@ Global
 		{625635FD-FECB-42EC-9783-E2175C3660AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{625635FD-FECB-42EC-9783-E2175C3660AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{625635FD-FECB-42EC-9783-E2175C3660AD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8CB23309-0D3F-48B0-A369-C7F69E2286DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8CB23309-0D3F-48B0-A369-C7F69E2286DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8CB23309-0D3F-48B0-A369-C7F69E2286DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8CB23309-0D3F-48B0-A369-C7F69E2286DD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AF5525E1-9281-4DE3-868F-B448ECCB5C63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AF5525E1-9281-4DE3-868F-B448ECCB5C63}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AF5525E1-9281-4DE3-868F-B448ECCB5C63}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AF5525E1-9281-4DE3-868F-B448ECCB5C63}.Release|Any CPU.Build.0 = Release|Any CPU
 		{42A3AED5-9D7F-459E-B628-FE3EEC26047F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{42A3AED5-9D7F-459E-B628-FE3EEC26047F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42A3AED5-9D7F-459E-B628-FE3EEC26047F}.Release|Any CPU.ActiveCfg = Release|Any CPU
