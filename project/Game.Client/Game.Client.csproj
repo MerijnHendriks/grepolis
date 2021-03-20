@@ -10,4 +10,8 @@
     <Page Include="App.xaml" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Game.Common\Game.Common.csproj" />
+  </ItemGroup>
+
 </Project>
