@@ -1,15 +1,16 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 using Game.Client.Utils;
+using Game.Client.Views.City;
 
 namespace Game.Client.Views
 {
     /// <summary>
     /// Interaction logic for MainMenu.xaml
     /// </summary>
-    public partial class MainMenuView : UserControl
+    public partial class LoginView : UserControl
     {
-        public MainMenuView()
+        public LoginView()
         {
             InitializeComponent();
         }
@@ -18,7 +19,7 @@ namespace Game.Client.Views
         {
             if (loginUsername.Text == "username" && loginPassword.Text == "password")
             {
-                ViewUtil.Switch(new CityView());
+                ViewUtil.Switch(new SenateView());
             }
         }
     }

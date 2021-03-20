@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="Game.Client.Views.MainMenuView"
+﻿<UserControl x:Class="Game.Client.Views.LoginView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,8 +6,8 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <Image x:Name="mainBackground" HorizontalAlignment="Center" Height="450" VerticalAlignment="Top" Width="800" Source="/Resources/bg-main.png" Stretch="None"/>
-        <Image x:Name="mainLogo" HorizontalAlignment="Center" Height="151" Margin="0,65,0,0" VerticalAlignment="Top" Width="660" Source="/Resources/logo-main.png" Stretch="None"/>
+        <Image x:Name="mainBackground" HorizontalAlignment="Center" Height="450" VerticalAlignment="Top" Width="800" Source="/Resources/Main/bg.png" Stretch="None"/>
+        <Image x:Name="mainLogo" HorizontalAlignment="Center" Height="151" Margin="0,65,0,0" VerticalAlignment="Top" Width="660" Source="/Resources/Main/logo.png" Stretch="None"/>
         <Rectangle HorizontalAlignment="Left" Height="149" Margin="334,222,0,0" Stroke="#CC000000" VerticalAlignment="Top" Width="136" Fill="#CC000000"/>
         <Label x:Name="loginUsernameLabel" Content="Username" HorizontalAlignment="Left" Margin="342,222,0,0" VerticalAlignment="Top" Foreground="White"/>
         <TextBox x:Name="loginUsername" HorizontalAlignment="Left" Margin="342,248,0,0" Text="username" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>

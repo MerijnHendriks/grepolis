@@ -10,7 +10,7 @@ namespace Game.Client.Windows
         {
             InitializeComponent();
             ViewUtil.SetWindow(this);
-            ViewUtil.Switch(new MainMenuView());
+            ViewUtil.Switch(new LoginView());
         }
     }
 }

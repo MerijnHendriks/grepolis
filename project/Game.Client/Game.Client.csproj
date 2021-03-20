@@ -16,8 +16,30 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Resources\bg-main.png" />
-    <Resource Include="Resources\logo-main.png" />
+    <Resource Include="Resources\Main\bg.png" />
+    <Resource Include="Resources\Main\logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\City\CityView - Copy %282%29.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>CityView.xaml.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Views\City\CityView - Copy - Copy.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>CityView - Copy.xaml.cs</DependentUpon>
+    </Compile>
+    <Compile Update="Views\City\CityView - Copy.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>CityView.xaml.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Views\City\SenateView.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
 
 </Project>

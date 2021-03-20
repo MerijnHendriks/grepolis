@@ -10,9 +10,12 @@ namespace Game.Client.Views
     /// <summary>
     /// Interaction logic for CityView.xaml
     /// </summary>
-    public partial class CityView : UserControl
+    public partial class TestImageScrollView : UserControl
     {
-        public CityView()
+        private Image draggedImage;
+        private Point mousePosition;
+
+        public TestImageScrollView()
         {
             InitializeComponent();
         }
@@ -34,9 +37,6 @@ namespace Game.Client.Views
                 canvas.Children.Add(image);
             }
         }
-
-        private Image draggedImage;
-        private Point mousePosition;
 
         private void CanvasMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
