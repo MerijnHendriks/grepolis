@@ -1,16 +1,17 @@
 ﻿using System;
-using System.Text;
 using Game.Common.Constants;
 using Game.Common.Utils;
+using Grepolis.Scrapper.Constants;
+using Grepolis.Scrapper.Helpers;
 
-namespace Grepolis.Scrapper
+namespace Grepolis.Scrapper.Utils
 {
-    public class Scrapper
+    public class ScrapperUtil
     {
         public readonly string CDN;
         public readonly string OutPath;
 
-        public Scrapper(string cdn)
+        public ScrapperUtil(string cdn)
         {
             CDN = cdn;
             OutPath = "downloaded".FromCwd();

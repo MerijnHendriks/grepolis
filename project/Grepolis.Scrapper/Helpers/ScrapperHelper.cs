@@ -4,8 +4,10 @@ using System.Drawing.Imaging;
 using System.IO;
 using System.Text.RegularExpressions;
 using Game.Common.Utils;
+using Grepolis.Scrapper.Constants;
+using Grepolis.Scrapper.Models;
 
-namespace Grepolis.Scrapper
+namespace Grepolis.Scrapper.Helpers
 {
     public static class ScrapperHelper
     {

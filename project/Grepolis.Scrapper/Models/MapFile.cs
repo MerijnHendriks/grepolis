@@ -1,4 +1,4 @@
-﻿namespace Grepolis.Scrapper
+﻿namespace Grepolis.Scrapper.Models
 {
     public class MapFile
     {

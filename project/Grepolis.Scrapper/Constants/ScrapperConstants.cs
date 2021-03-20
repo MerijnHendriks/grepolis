@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace Grepolis.Scrapper
+namespace Grepolis.Scrapper.Constants
 {
     public static class ScrapperConstants
     {

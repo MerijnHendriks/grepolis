@@ -1,10 +1,12 @@
-﻿namespace Grepolis.Scrapper
+﻿using Grepolis.Scrapper.Utils;
+
+namespace Grepolis.Scrapper
 {
     public class Program
     {
         public static void Main(string[] args)
         {
-            Scrapper scrapper = new Scrapper("https://gpen.innogamescdn.com");
+            ScrapperUtil scrapper = new ScrapperUtil("https://gpen.innogamescdn.com");
             scrapper.Run();
         }
     }
