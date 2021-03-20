@@ -47,7 +47,6 @@ namespace Grepolis.Scrapper
 
         public void Run()
         {
-            /*
             // get js files
             DownloadFiles(ScrapperConstants.MapPaths);
 
@@ -61,7 +60,6 @@ namespace Grepolis.Scrapper
 
             // get css files
             DownloadFiles(ScrapperConstants.CssPaths);
-            */
 
             // get images
             string[] cssFiles = VFS.GetFiles(OutPath + "/cache/css/merged/");
